@@ -1,0 +1,11 @@
+.square {
+  display: flex; align-items: center; justify-content: center; min-width: 0;
+  border: 1px solid #38506d; border-radius: 16px; color: #f8fafc;
+  background: #1b2b43; font: 700 clamp(2.7rem, 12vw, 4rem) "Space Grotesk", sans-serif;
+  cursor: pointer; transition: background .15s ease, transform .15s ease;
+}
+.square:not(:disabled):hover { background: #294360; transform: scale(1.03); }
+.square:disabled { cursor: not-allowed; opacity: 1; }
+.square-x { color: #7dd3fc; }
+.square-o { color: #f9a8d4; }
+.square:focus-visible { outline: 3px solid #f8fafc; outline-offset: 2px; }
